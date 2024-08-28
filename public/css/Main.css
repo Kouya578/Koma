@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #20f33c;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e0a728;
+}
+
+.Logo {
+    width: 30px;
+    height: auto;
+}
+
+.bottomleft {
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ImageInfo {
+    width: 20px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-right: -30px;
+}
+
+#info {
+    z-index: 1;
+    margin: 0;
+    padding-left: 40px;
+    color: #333;
+    font-size: 16px;
+}

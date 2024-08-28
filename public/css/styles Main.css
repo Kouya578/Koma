@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 60px;
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    position: fixed;
+    transition: width 0.3s ease;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar.expanded {
+    width: 150px;
+}
+
+.sidebar.expanded + .content {
+    margin-left: 150px;
+}
+
+.sidebar a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+.sidebar a:hover {
+    background-color: #f4b836;
+    border: 2px solid #f4b836;
+    border-radius: 20px;
+}
+
+.sidebar.expanded .sidebar-text {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sidebar-text {
+    display: none;
+}
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.setting-button, .out-button {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.setting-button {
+    margin-bottom: 0;
+}
+
+.out-button:hover, .setting-button:hover {
+    background-color: #d32f2f;
+}
+
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.Logo {
+    width: 30px;
+    height: auto;
+}
+ 
+.LinkR {
+    background-color: #f4b836;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.LinkR:hover {
+    background-color: #3e8e41;
+}
+
+.Imageby1 {
+    border: 2px solid rgb(0, 38, 255);
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    border-radius: 25%;
+}
